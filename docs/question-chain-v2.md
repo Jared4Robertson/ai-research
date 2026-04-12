@@ -52,26 +52,26 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 4. Rules
+## 4. Capabilities
 
-### Q6: What are the business rules this product must follow, regardless of how it's built?
+### Q6: Based on the user journeys, what must this product be able to do?
+
+- Each capability is a thing the product does, stated without specifying how — e.g. "calculate settlement amounts," "notify users when reconciliation fails," "generate audit reports."
+- Every capability should trace back to a step in a user journey (Q5). If it doesn't trace back, question whether it's needed.
+
+**Expected answer:** A list of capabilities.
+
+---
+
+## 5. Rules
+
+### Q7: What are the business rules this product must follow, regardless of how it's built?
 
 - These are rules of the business, not rules of the software.
 - The test: if a rule would still be true even if you did everything on paper and spreadsheets, it belongs here.
 - Number each rule so they can be referenced later in stories and technical decisions (e.g. BR-01, BR-02).
 
 **Expected answer:** A numbered list of non-negotiable rules.
-
----
-
-## 5. Capabilities
-
-### Q7: Based on the user journeys and rules, what must this product be able to do?
-
-- Each capability is a thing the product does, stated without specifying how — e.g. "calculate settlement amounts," "notify users when reconciliation fails," "generate audit reports."
-- Every capability should trace back to a step in a user journey (Q5) or a business rule (Q6). If it doesn't trace back to either, question whether it's needed.
-
-**Expected answer:** A list of capabilities.
 
 ---
 
