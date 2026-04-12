@@ -2,9 +2,13 @@
 
 A step-by-step sequence of simple questions that walks a team from "we need to build a product" to well-defined epics, stories, and tasks. Each question has a clear expected answer format, and each answer feeds the next question.
 
+The answers land in four artifacts.
+
 ---
 
-## 1. Vision
+## 1. Product Brief
+
+**Owner:** PM-A with Product Director
 
 ### Q1: What are we building and why?
 
@@ -13,10 +17,6 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 **Expected answer:** A single sentence.
 
----
-
-## 2. Stakeholders
-
 ### Q2: Who cares about this product's results but won't use it directly?
 
 - These are stakeholders — e.g. compliance officer, finance director, client relationship manager.
@@ -24,16 +24,18 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 **Expected answer:** A list of role titles.
 
----
-
-## 3. User Journeys
-
 ### Q3: Who is our customer?
 
 - The external people or organizations who receive value from this product.
 - Roles, not individual names — e.g. client settlement operator, fund manager.
 
 **Expected answer:** A list of customer role titles.
+
+---
+
+## 2. User Journeys
+
+**Owner:** PM-B with EM
 
 ### Q4: Who are our internal users?
 
@@ -46,6 +48,7 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 - One sentence per role: "[Role] needs to _____."
 - Stay at the goal level, not the step-by-step level.
+- Covers both customer roles from Q3 and internal roles from Q4.
 
 **Expected answer:** A list of role + goal pairs.
 
@@ -59,7 +62,9 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 4. Capabilities
+## 3. Capabilities & Rules
+
+**Owner:** PM-B + EM + PM-A
 
 ### Q7: Based on the user journeys, what must this product be able to do?
 
@@ -67,10 +72,6 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 - Every capability should trace back to a step in a user journey (Q6). If it doesn't trace back, question whether it's needed.
 
 **Expected answer:** A list of capabilities.
-
----
-
-## 5. Rules
 
 ### Q8: What are the business rules this product must follow, regardless of how it's built?
 
@@ -82,7 +83,9 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 6. External Boundaries
+## 4. System Map
+
+**Owner:** EM with Senior Engineers
 
 ### Q9: What is inside this system and what is outside?
 
@@ -91,10 +94,6 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 - What is explicitly not part of this system, even if it's related?
 
 **Expected answer:** A list of what's in, what's out, and where the edges are.
-
----
-
-## 7. Internal Boundaries
 
 ### Q10: How do the pieces inside this system relate to each other?
 
