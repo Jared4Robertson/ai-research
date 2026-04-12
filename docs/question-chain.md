@@ -107,3 +107,18 @@ A step-by-step sequence of simple questions that walks a team from "we need to r
 **Expected answer:** A short list of concrete capabilities or outcomes, tied to the pain from Q7 and the workflows from Q8.
 
 **Why this matters:** This is the product vision — grounded in real pain and real workflows, not aspiration. If a proposed capability doesn't trace back to a pain from Q7 or a step from Q8, it's scope creep before you've even started.
+
+---
+
+## 8. Rules
+
+### Q10: What are the rules the system must follow no matter what?
+
+- Business rules, regulatory requirements, timing constraints, correctness guarantees.
+- Things like: "settlements must reconcile within 24 hours" or "every transaction must have an audit trail."
+- These aren't features — they're guardrails that constrain every design decision.
+- Number each rule so they can be referenced later in stories and technical decisions (e.g. BR-01, BR-02).
+
+**Expected answer:** A numbered list of non-negotiable rules.
+
+**Why this matters:** These rules exist whether you document them or not. If engineering doesn't know them, they make architecture decisions that fight the domain — and that's exactly what happened with S2.
