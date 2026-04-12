@@ -6,26 +6,42 @@ A step-by-step sequence of simple questions that walks a team from "we need to r
 
 ## 1. Orient
 
-### Q1: What does this system do, in one sentence?
+### Q1: What does this system do?
 
-**Expected answer:** A single sentence. "The settlement system does _____ for _____."
+- Answer in one sentence: "The settlement system does _____ for _____."
+- If different people give different one-sentence answers, that's your first red flag.
 
-**Why this is first:** Everything else — who uses it, how it works, what to modernize — is meaningless until everyone agrees on what "it" is at the highest level.
-
-**Who can answer this:** Anyone on the team. If you get different one-sentence answers from different people, that's your first red flag.
+**Expected answer:** A single sentence.
 
 ---
 
 ## 2. People
 
-### Q2: What are all the roles that directly interact with the settlement system?
+### Q2: What roles directly use the system?
 
-**Expected answer:** A list of role titles — e.g. settlement analyst, operations manager, client support rep. Not individual names. Each role represents a distinct way someone uses the system.
+- List every role title that interacts with the system — e.g. settlement analyst, operations manager, client support rep.
+- Roles, not individual names. Each role represents a distinct way someone uses the system.
 
-**Why this comes second:** You can't map what the system does until you know who does things in it. And asking per-role keeps every future question small and scoped.
+**Expected answer:** A list of role titles.
 
-### Q3: Who are all the people that depend on the settlement system's results but don't use it directly?
+### Q3: Who depends on the system's results but doesn't use it directly?
 
-**Expected answer:** A list of role titles — e.g. compliance officer, finance director, client relationship manager. These are the stakeholders who care about outcomes but don't log in.
+- These are stakeholders — e.g. compliance officer, finance director, client relationship manager.
+- They care about outcomes (accuracy, timeliness, compliance) but don't log in.
 
-**Why this comes third:** Users tell you how it works today. Stakeholders tell you why it must work that way. You need both lists before you go deeper, but users come first because they ground you in reality.
+**Expected answer:** A list of role titles.
+
+---
+
+## 3. Value
+
+### Q4: What would happen if this system stopped working tomorrow?
+
+- What breaks first? What breaks worst?
+- Which roles from Q2 and Q3 are impacted, and how?
+- What would people have to do manually as a workaround?
+- What consequences would reach customers, regulators, or the business's bottom line?
+
+**Expected answer:** A list of concrete consequences, naturally sorted by severity.
+
+**Why this matters:** The things that would break worst are the things the replacement must get right first. The things nobody would miss are candidates to drop. This answer becomes your priority map.
