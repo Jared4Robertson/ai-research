@@ -95,24 +95,9 @@ A step-by-step sequence of simple questions that walks a team from "we need to r
 
 ---
 
-## 7. Vision
+## 7. Rules
 
-### Q9: What should the new system make possible that the current one can't?
-
-- Not a technology wish list. Not "microservices" or "cloud-native."
-- Answer in terms of what changes for the roles from Q3–Q5: what can they do that they couldn't before?
-- Which painful steps from Q8 should disappear, get faster, or get automated?
-- What business outcomes become achievable that aren't today?
-
-**Expected answer:** A short list of concrete capabilities or outcomes, tied to the pain from Q7 and the workflows from Q8.
-
-**Why this matters:** This is the product vision — grounded in real pain and real workflows, not aspiration. If a proposed capability doesn't trace back to a pain from Q7 or a step from Q8, it's scope creep before you've even started.
-
----
-
-## 8. Rules
-
-### Q10: What are the business rules that any settlement system must follow, regardless of how it's built?
+### Q9: What are the business rules that any settlement system must follow, regardless of how it's built?
 
 - These are rules of the business, not rules of the software.
 - Things like: "settlements must reconcile within 24 hours" or "every transaction must have an audit trail."
@@ -122,3 +107,19 @@ A step-by-step sequence of simple questions that walks a team from "we need to r
 **Expected answer:** A numbered list of non-negotiable rules.
 
 **Why this matters:** These rules exist whether you document them or not. If engineering doesn't know them, they make architecture decisions that fight the domain — and that's exactly what happened with S2.
+
+---
+
+## 8. Vision
+
+### Q10: What should the new system make possible that the current one can't?
+
+- Not a technology wish list. Not "microservices" or "cloud-native."
+- Answer in terms of what changes for the roles from Q3–Q5: what can they do that they couldn't before?
+- Which painful steps from Q8 should disappear, get faster, or get automated?
+- What business outcomes become achievable that aren't today?
+- The vision must respect the rules from Q9 — if a proposed capability violates a business rule, it needs to be rethought.
+
+**Expected answer:** A short list of concrete capabilities or outcomes, tied to the pain from Q7, the workflows from Q8, and bounded by the rules from Q9.
+
+**Why this matters:** This is the product vision — grounded in real pain, real workflows, and real constraints. If a proposed capability doesn't trace back to a pain from Q7 or a step from Q8, it's scope creep before you've even started.
