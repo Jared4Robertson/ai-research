@@ -259,72 +259,71 @@ That framing is important:
 
 ## 12. Appendix — Skeleton of the Experience Vision Artifact (S2.1 edition)
 
-Use this as the outline when PM-B and I draft it in Week 2. Target 6–8 pages.
+Use this as the outline when PM-B and I draft it in Week 2. Target 3–4 pages.
+
+> **Simplified version.** The pitch one-pager (`pitch-one-pager.md`) presents only the four core sections below. Additional sections (system context diagram, outcomes, non-goals) can be added in Week 3–4 if the core proves useful.
+
+### Core sections (the 3–4 page artifact)
 
 ```
-1. Who we serve
-   - Persona 1: <name, role, what they care about — e.g. operations user>
-   - Persona 2: <name, role — e.g. pilot client settlement operator>
-   - Persona 3: <if needed — e.g. internal finance/compliance reviewer>
+1. Current-state settlement journey
+   - Step-by-step journey combining legacy and S2 into ONE view
+   - What the user actually does today, across both systems
+   - Pain points called out in-line (mark which are legacy pain
+     vs. S2 misalignment pain)
+   - Sourced from: legacy system observation, pilot client
+     interview, PM-A's existing knowledge
+   - ONE PAGE.
 
-2. The job to be done
-   - When <situation>, they want to <motivation>, so they can <outcome>.
-   - Keep this single-paragraph. If you need more than a paragraph,
-     you probably have two jobs and should split them.
+2. Business rules / domain invariants  [OWNED BY PM-A]
+   - The non-negotiable settlement rules the system must honor
+   - Reconciliation, timing, correctness, audit, money movement,
+     regulatory/compliance, tenancy — whatever the domain demands
+   - Each rule numbered so stories and ADRs can reference them
+     (e.g. "BR-07: settlements must be reversible within 24h")
+   - THIS IS THE SECTION WHOSE ABSENCE CAUSED S2'S DRIFT.
+     Treat it as load-bearing.
+   - ONE PAGE.
 
-3. Legacy current-state journey
-   - Step-by-step journey AS THE LEGACY SYSTEM RUNS IT TODAY
-   - Pain points called out in-line
-   - Sourced from: legacy system observation + PM-A's existing knowledge
-   - This exists so S2.1 does not accidentally break capabilities
-     that legacy quietly handles correctly today.
-
-4. S2 current-state journey (pilot client)
-   - Step-by-step journey AS S2 RUNS IT TODAY FOR THE PILOT
-   - Where the architectural misalignment shows up as user pain
-   - Sourced from: pilot client interview + senior engineers' observations
-   - This is the "we already paid tuition" evidence.
-
-5. What S2 taught us (blameless architectural lessons)
+3. What S2 taught us (blameless architectural lessons)
+   [OWNED BY SENIOR ENGINEERS]
    - Business assumptions that turned out to be wrong
    - Boundaries we drew in the wrong place
    - What we would do differently in S2.1
-   - Owned by: senior engineers
-   - Framed as "what the next system should know" not "what went wrong"
+   - Framed as "what the next system should know"
+     not "what went wrong"
+   - ONE PAGE.
 
-6. S2.1 target-state journey (2–4 quarters out)
-   - Same journey, with legacy pain AND S2 misalignment both removed
+4. S2.1 target-state journey
+   - Same journey as section 1, with legacy pain AND S2
+     misalignment both removed
    - What the user notices that is different
    - What the system does differently
-   - Sourced from: synthesis of 3 + 4 + 5
+   - Sourced from: synthesis of sections 1 + 2 + 3
+   - ONE PAGE.
+```
 
-7. S2.1 system context diagram
+### Sections to add later if the core earns its right
+
+```
+5. S2.1 system context diagram
    - Boxes: services, shared data stores, external integrations
    - Lines: data/control flow
    - Dotted boundary: which team owns what
    - Annotations: "where we differ from S2 and why"
 
-8. Business rules / domain invariants  [OWNED BY PM-A]
-   - The non-negotiable settlement rules the system must honor
-   - Reconciliation, timing, correctness, audit, money movement,
-     regulatory/compliance, tenancy, whatever the domain demands
-   - Each rule numbered so stories and ADRs can reference them
-     (e.g. "BR-07: settlements must be reversible within 24h")
-   - THIS IS THE SECTION WHOSE ABSENCE CAUSED S2'S DRIFT.
-     Treat it as load-bearing.
-
-9. Outcomes that bridge current → target
+6. Outcomes that bridge current → target
    - Outcome 1: <measurable metric>
    - Outcome 2: <measurable metric>
    - Outcome 3: <measurable metric>
-   - (Cap at 5, spread across the three roadmap lanes)
+   - (Cap at 5, spread across roadmap lanes)
 
-10. Explicit non-goals
-    - What we are deliberately not doing in this horizon
-    - Especially: what S2 does that S2.1 will deliberately NOT try
-      to preserve (and why)
+7. Explicit non-goals
+   - What we are deliberately not doing in this horizon
+   - Especially: what S2 does that S2.1 will deliberately NOT
+     try to preserve (and why)
 ```
 
-Keep the whole thing under 8 pages. If it is longer, it will not be read, and unread artifacts create more confusion than they resolve.
+If the core 3–4 pages are longer than that, they will not be read, and unread artifacts create more confusion than they resolve.
 
-One closing note: the business rules section (#8) is the single most valuable page in the document. If the pitch succeeds at producing *only* that one page and nothing else, S2.1 will still be in a meaningfully better place than it is today.
+One closing note: the business rules section (#2) is the single most valuable page in the document. If the pitch succeeds at producing *only* that one page and nothing else, S2.1 will still be in a meaningfully better place than it is today.
