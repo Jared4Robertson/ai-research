@@ -4,7 +4,7 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 1. Goal
+## 1. Vision
 
 ### Q1: What are we building and why?
 
@@ -49,15 +49,3 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 - Number each rule so they can be referenced later in stories and technical decisions (e.g. BR-01, BR-02).
 
 **Expected answer:** A numbered list of non-negotiable rules.
-
----
-
-## 4. Vision
-
-### Q6: What should this product make possible?
-
-- Not a technology wish list. Not "microservices" or "cloud-native."
-- Answer in terms of what changes for the roles from Q2–Q4: what can they do that they can't today?
-- The vision must respect the rules from Q5.
-
-**Expected answer:** A short list of concrete capabilities or outcomes.
