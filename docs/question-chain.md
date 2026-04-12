@@ -112,11 +112,11 @@ A step-by-step sequence of simple questions that walks a team from "we need to r
 
 ## 8. Rules
 
-### Q10: What are the rules the system must follow no matter what?
+### Q10: What are the business rules that any settlement system must follow, regardless of how it's built?
 
-- Business rules, regulatory requirements, timing constraints, correctness guarantees.
+- These are rules of the business, not rules of the software.
 - Things like: "settlements must reconcile within 24 hours" or "every transaction must have an audit trail."
-- These aren't features — they're guardrails that constrain every design decision.
+- The test: if a rule would still be true even if you did everything on paper and spreadsheets, it belongs here.
 - Number each rule so they can be referenced later in stories and technical decisions (e.g. BR-01, BR-02).
 
 **Expected answer:** A numbered list of non-negotiable rules.
