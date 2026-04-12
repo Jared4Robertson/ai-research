@@ -24,7 +24,14 @@ A step-by-step sequence of simple questions that walks a team from "we need to r
 
 **Expected answer:** A list of role titles.
 
-### Q3: Who depends on the system's results but doesn't use it directly?
+### Q3: For each role, what are they trying to accomplish with the system?
+
+- One sentence per role: "[Role] uses the system to _____."
+- Stay at the goal level, not the step-by-step level. "Process daily settlements" not "click the reconcile button then export the CSV."
+
+**Expected answer:** A list of role + goal pairs.
+
+### Q4: Who depends on the system's results but doesn't use it directly?
 
 - These are stakeholders — e.g. compliance officer, finance director, client relationship manager.
 - They care about outcomes (accuracy, timeliness, compliance) but don't log in.
@@ -35,10 +42,10 @@ A step-by-step sequence of simple questions that walks a team from "we need to r
 
 ## 3. Value
 
-### Q4: What would happen if this system stopped working tomorrow?
+### Q5: What would happen if this system stopped working tomorrow?
 
 - What breaks first? What breaks worst?
-- Which roles from Q2 and Q3 are impacted, and how?
+- Which roles from Q2–Q4 are impacted, and how?
 - What would people have to do manually as a workaround?
 - What consequences would reach customers, regulators, or the business's bottom line?
 
