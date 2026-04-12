@@ -15,28 +15,32 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 2. User Journeys
+## 2. Stakeholders
 
-### Q2: Who is this for?
+### Q2: Who cares about this product's results but won't use it directly?
+
+- These are stakeholders — e.g. compliance officer, finance director, client relationship manager.
+- They care about outcomes (accuracy, timeliness, compliance) but won't log in.
+
+**Expected answer:** A list of role titles.
+
+---
+
+## 3. User Journeys
+
+### Q3: Who is this for?
 
 - List every role that will use this product — e.g. settlement analyst, operations manager, client support rep.
 - Roles, not individual names. Each role represents a distinct way someone will use the product.
 
 **Expected answer:** A list of role titles.
 
-### Q3: For each role, what are they trying to accomplish?
+### Q4: For each role, what are they trying to accomplish?
 
 - One sentence per role: "[Role] needs to _____."
 - Stay at the goal level, not the step-by-step level.
 
 **Expected answer:** A list of role + goal pairs.
-
-### Q4: Who cares about the results but won't use it directly?
-
-- These are stakeholders — e.g. compliance officer, finance director, client relationship manager.
-- They care about outcomes (accuracy, timeliness, compliance) but won't log in.
-
-**Expected answer:** A list of role titles.
 
 ### Q5: For each role, what is the step-by-step experience of using this product to accomplish their goal?
 
@@ -48,7 +52,7 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 3. Rules
+## 4. Rules
 
 ### Q6: What are the business rules this product must follow, regardless of how it's built?
 
@@ -60,7 +64,7 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 4. Capabilities
+## 5. Capabilities
 
 ### Q7: Based on the user journeys and rules, what must this product be able to do?
 
@@ -71,7 +75,7 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 5. System Boundaries
+## 6. System Boundaries
 
 ### Q8: What is inside this system and what is outside?
 
