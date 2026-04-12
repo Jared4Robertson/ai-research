@@ -81,14 +81,29 @@ A step-by-step sequence of simple questions that walks a team from "we need to r
 
 ---
 
-## 6. Vision
+## 6. Current Workflows
 
-### Q8: What should the new system make possible that the current one can't?
+### Q8: For each role, what are the steps they go through in the system to accomplish their goal?
+
+- Take the role + goal pairs from Q4 and walk through each one: "First they _____, then they _____, then they _____."
+- Include the ugly parts — manual workarounds, waiting on other people, exporting to spreadsheets, copy-pasting between systems.
+- Note where different roles' workflows overlap or hand off to each other.
+
+**Expected answer:** A step-by-step workflow per role, in plain language.
+
+**Why this matters:** This is the ground truth of how the system actually works — not how it was designed to work, not how the docs say it works, but what people actually do. The vision (Q9) can only be specific if it has these workflows to push against.
+
+---
+
+## 7. Vision
+
+### Q9: What should the new system make possible that the current one can't?
 
 - Not a technology wish list. Not "microservices" or "cloud-native."
 - Answer in terms of what changes for the roles from Q3–Q5: what can they do that they couldn't before?
+- Which painful steps from Q8 should disappear, get faster, or get automated?
 - What business outcomes become achievable that aren't today?
 
-**Expected answer:** A short list of concrete capabilities or outcomes, tied to the pain from Q7.
+**Expected answer:** A short list of concrete capabilities or outcomes, tied to the pain from Q7 and the workflows from Q8.
 
-**Why this matters:** This is the product vision — grounded in real pain, not aspiration. If a proposed capability doesn't trace back to a pain from Q7 or a goal from Q4, it's scope creep before you've even started.
+**Why this matters:** This is the product vision — grounded in real pain and real workflows, not aspiration. If a proposed capability doesn't trace back to a pain from Q7 or a step from Q8, it's scope creep before you've even started.
