@@ -75,7 +75,7 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 
 ---
 
-## 6. System Boundaries
+## 6. External Boundaries
 
 ### Q8: What is inside this system and what is outside?
 
@@ -84,3 +84,16 @@ A step-by-step sequence of simple questions that walks a team from "we need to b
 - What is explicitly not part of this system, even if it's related?
 
 **Expected answer:** A list of what's in, what's out, and where the edges are.
+
+---
+
+## 7. Internal Boundaries
+
+### Q9: How do the pieces inside this system relate to each other?
+
+- What are the major modules or services inside the product?
+- Which module owns which capabilities from Q6?
+- How do they communicate — what data flows between them?
+- Where are the seams between different teams' ownership?
+
+**Expected answer:** A list of internal modules/services, what each owns, and how they connect.
